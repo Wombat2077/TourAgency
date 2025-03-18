@@ -10,4 +10,8 @@ public partial class InsuranceType
     public int Id { get; set; }
 
     public string Name { get; set; }
+
+    public virtual ICollection<Insurance> Insurances { get; set; } = new List<Insurance>();
+
+    public virtual ICollection<Tour> Tours { get; set; } = new List<Tour>();
 }

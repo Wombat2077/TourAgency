@@ -12,4 +12,8 @@ public partial class ServiceType
     public string Name { get; set; }
 
     public decimal? Cost { get; set; }
+
+    public virtual ICollection<ActualService> ActualServices { get; set; } = new List<ActualService>();
+
+    public virtual ICollection<TourService> TourServices { get; set; } = new List<TourService>();
 }

@@ -12,4 +12,8 @@ public partial class HotelsByTour
     public int HotelId { get; set; }
 
     public int TourId { get; set; }
+
+    public virtual Hotel Hotel { get; set; }
+
+    public virtual Tour Tour { get; set; }
 }

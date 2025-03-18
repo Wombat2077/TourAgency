@@ -12,4 +12,8 @@ public partial class TourTypesToTour
     public int TypeId { get; set; }
 
     public int? TourId { get; set; }
+
+    public virtual Tour Tour { get; set; }
+
+    public virtual TourType Type { get; set; }
 }

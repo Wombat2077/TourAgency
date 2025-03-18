@@ -5,15 +5,15 @@ using System.Collections.Generic;
 
 namespace TourAgency.Models;
 
-public partial class Insurance
+public partial class HotelsFoodType
 {
     public int Id { get; set; }
 
-    public int TouristId { get; set; }
+    public int HotelId { get; set; }
 
-    public int? InsuranceTypeId { get; set; }
+    public int? FoodTypeId { get; set; }
 
-    public virtual InsuranceType InsuranceType { get; set; }
+    public virtual FoodType Hotel { get; set; }
 
-    public virtual Tourist Tourist { get; set; }
+    public virtual Hotel HotelNavigation { get; set; }
 }

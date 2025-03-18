@@ -9,9 +9,17 @@ public partial class Agreement
 {
     public int Id { get; set; }
 
-    public string ClientId { get; set; }
+    public int? ClientId { get; set; }
 
-    public int Status { get; set; }
+    public int StatusId { get; set; }
 
-    public int Hotel { get; set; }
+    public int HotelId { get; set; }
+
+    public virtual ICollection<ActualService> ActualServices { get; set; } = new List<ActualService>();
+
+    public virtual Client Client { get; set; }
+
+    public virtual Hotel Hotel { get; set; }
+
+    public virtual Status Status { get; set; }
 }

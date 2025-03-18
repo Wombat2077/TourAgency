@@ -12,4 +12,14 @@ public partial class Hotel
     public string Name { get; set; }
 
     public decimal CostPerNight { get; set; }
+
+    public int Rating { get; set; }
+
+    public string Address { get; set; }
+
+    public virtual ICollection<Agreement> Agreements { get; set; } = new List<Agreement>();
+
+    public virtual ICollection<HotelsByTour> HotelsByTours { get; set; } = new List<HotelsByTour>();
+
+    public virtual ICollection<HotelsFoodType> HotelsFoodTypes { get; set; } = new List<HotelsFoodType>();
 }

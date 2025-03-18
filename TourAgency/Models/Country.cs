@@ -5,15 +5,13 @@ using System.Collections.Generic;
 
 namespace TourAgency.Models;
 
-public partial class Insurance
+public partial class Country
 {
     public int Id { get; set; }
 
-    public int TouristId { get; set; }
+    public string Name { get; set; }
 
-    public int? InsuranceTypeId { get; set; }
+    public string Code { get; set; }
 
-    public virtual InsuranceType InsuranceType { get; set; }
-
-    public virtual Tourist Tourist { get; set; }
+    public virtual ICollection<City> Cities { get; set; } = new List<City>();
 }

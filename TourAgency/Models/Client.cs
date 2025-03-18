@@ -12,4 +12,10 @@ public partial class Client
     public int ClientType { get; set; }
 
     public string Name { get; set; }
+
+    public virtual ICollection<Agreement> Agreements { get; set; } = new List<Agreement>();
+
+    public virtual ClientType ClientTypeNavigation { get; set; }
+
+    public virtual ICollection<Tourist> Tourists { get; set; } = new List<Tourist>();
 }

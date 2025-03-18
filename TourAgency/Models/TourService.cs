@@ -12,4 +12,8 @@ public partial class TourService
     public int ServiceId { get; set; }
 
     public int TourId { get; set; }
+
+    public virtual ServiceType Service { get; set; }
+
+    public virtual Tour Tour { get; set; }
 }

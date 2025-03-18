@@ -11,5 +11,9 @@ public partial class ActualService
 
     public int ServiceId { get; set; }
 
-    public int ClientId { get; set; }
+    public int AgreementId { get; set; }
+
+    public virtual Agreement Agreement { get; set; }
+
+    public virtual ServiceType Service { get; set; }
 }

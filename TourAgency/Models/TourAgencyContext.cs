@@ -17,13 +17,21 @@ public partial class TourAgencyContext : DbContext
 
     public virtual DbSet<Agreement> Agreements { get; set; }
 
+    public virtual DbSet<City> Cities { get; set; }
+
     public virtual DbSet<Client> Clients { get; set; }
 
     public virtual DbSet<ClientType> ClientTypes { get; set; }
 
+    public virtual DbSet<Country> Countries { get; set; }
+
+    public virtual DbSet<FoodType> FoodTypes { get; set; }
+
     public virtual DbSet<Hotel> Hotels { get; set; }
 
     public virtual DbSet<HotelsByTour> HotelsByTours { get; set; }
+
+    public virtual DbSet<HotelsFoodType> HotelsFoodTypes { get; set; }
 
     public virtual DbSet<Insurance> Insurances { get; set; }
 
@@ -47,7 +55,17 @@ public partial class TourAgencyContext : DbContext
     {
         modelBuilder.Entity<ActualService>(entity =>
         {
-            entity.HasNoKey();
+            entity.Property(e => e.Id).ValueGeneratedNever();
+
+            entity.HasOne(d => d.Agreement).WithMany(p => p.ActualServices)
+                .HasForeignKey(d => d.AgreementId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_ActualServices_Agreement");
+
+            entity.HasOne(d => d.Service).WithMany(p => p.ActualServices)
+                .HasForeignKey(d => d.ServiceId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_ActualServices_ServiceTypes");
         });
 
         modelBuilder.Entity<Agreement>(entity =>
@@ -55,13 +73,41 @@ public partial class TourAgencyContext : DbContext
             entity.ToTable("Agreement");
 
             entity.Property(e => e.Id).ValueGeneratedNever();
-            entity.Property(e => e.ClientId).HasMaxLength(50);
+
+            entity.HasOne(d => d.Client).WithMany(p => p.Agreements)
+                .HasForeignKey(d => d.ClientId)
+                .HasConstraintName("FK_Agreement_Clients");
+
+            entity.HasOne(d => d.Hotel).WithMany(p => p.Agreements)
+                .HasForeignKey(d => d.HotelId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Agreement_Hotels");
+
+            entity.HasOne(d => d.Status).WithMany(p => p.Agreements)
+                .HasForeignKey(d => d.StatusId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Agreement_Status");
+        });
+
+        modelBuilder.Entity<City>(entity =>
+        {
+            entity.Property(e => e.Id).ValueGeneratedNever();
+            entity.Property(e => e.Name).HasMaxLength(50);
+
+            entity.HasOne(d => d.Country).WithMany(p => p.Cities)
+                .HasForeignKey(d => d.CountryId)
+                .HasConstraintName("FK_Cities_Countries");
         });
 
         modelBuilder.Entity<Client>(entity =>
         {
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.Name).HasMaxLength(50);
+
+            entity.HasOne(d => d.ClientTypeNavigation).WithMany(p => p.Clients)
+                .HasForeignKey(d => d.ClientType)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Clients_ClientType1");
         });
 
         modelBuilder.Entity<ClientType>(entity =>
@@ -74,9 +120,31 @@ public partial class TourAgencyContext : DbContext
                 .HasMaxLength(50);
         });
 
+        modelBuilder.Entity<Country>(entity =>
+        {
+            entity.Property(e => e.Id).ValueGeneratedNever();
+            entity.Property(e => e.Code)
+                .HasMaxLength(3)
+                .IsFixedLength();
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(50);
+        });
+
+        modelBuilder.Entity<FoodType>(entity =>
+        {
+            entity.Property(e => e.Id).ValueGeneratedNever();
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(50);
+        });
+
         modelBuilder.Entity<Hotel>(entity =>
         {
             entity.Property(e => e.Id).ValueGeneratedNever();
+            entity.Property(e => e.Address)
+                .IsRequired()
+                .HasMaxLength(100);
             entity.Property(e => e.CostPerNight).HasColumnType("money");
             entity.Property(e => e.Name)
                 .IsRequired()
@@ -88,14 +156,45 @@ public partial class TourAgencyContext : DbContext
             entity.ToTable("HotelsByTour");
 
             entity.Property(e => e.Id).ValueGeneratedNever();
+
+            entity.HasOne(d => d.Hotel).WithMany(p => p.HotelsByTours)
+                .HasForeignKey(d => d.HotelId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_HotelsByTour_Hotels");
+
+            entity.HasOne(d => d.Tour).WithMany(p => p.HotelsByTours)
+                .HasForeignKey(d => d.TourId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_HotelsByTour_Tours");
+        });
+
+        modelBuilder.Entity<HotelsFoodType>(entity =>
+        {
+            entity.Property(e => e.Id).ValueGeneratedNever();
+
+            entity.HasOne(d => d.Hotel).WithMany(p => p.HotelsFoodTypes)
+                .HasForeignKey(d => d.HotelId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_HotelsFoodTypes_FoodTypes");
+
+            entity.HasOne(d => d.HotelNavigation).WithMany(p => p.HotelsFoodTypes)
+                .HasForeignKey(d => d.HotelId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_HotelsFoodTypes_Hotels");
         });
 
         modelBuilder.Entity<Insurance>(entity =>
         {
             entity.Property(e => e.Id).ValueGeneratedNever();
-            entity.Property(e => e.Name)
-                .IsRequired()
-                .HasMaxLength(50);
+
+            entity.HasOne(d => d.InsuranceType).WithMany(p => p.Insurances)
+                .HasForeignKey(d => d.InsuranceTypeId)
+                .HasConstraintName("FK_Insurances_InsuranceTypes");
+
+            entity.HasOne(d => d.Tourist).WithMany(p => p.Insurances)
+                .HasForeignKey(d => d.TouristId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Insurances_Tourists");
         });
 
         modelBuilder.Entity<InsuranceType>(entity =>
@@ -106,8 +205,7 @@ public partial class TourAgencyContext : DbContext
 
         modelBuilder.Entity<ServiceType>(entity =>
         {
-            entity.HasNoKey();
-
+            entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.Cost).HasColumnType("money");
             entity.Property(e => e.Name)
                 .IsRequired()
@@ -128,14 +226,34 @@ public partial class TourAgencyContext : DbContext
         {
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.Cost).HasColumnType("money");
+            entity.Property(e => e.EndDate).HasColumnType("datetime");
             entity.Property(e => e.Name)
                 .IsRequired()
                 .HasMaxLength(50);
+            entity.Property(e => e.StartDate).HasColumnType("datetime");
+
+            entity.HasOne(d => d.City).WithMany(p => p.Tours)
+                .HasForeignKey(d => d.CityId)
+                .HasConstraintName("FK_Tours_Cities");
+
+            entity.HasOne(d => d.NeededInsurance).WithMany(p => p.Tours)
+                .HasForeignKey(d => d.NeededInsuranceId)
+                .HasConstraintName("FK_Tours_InsuranceTypes");
         });
 
         modelBuilder.Entity<TourService>(entity =>
         {
-            entity.HasNoKey();
+            entity.Property(e => e.Id).ValueGeneratedNever();
+
+            entity.HasOne(d => d.Service).WithMany(p => p.TourServices)
+                .HasForeignKey(d => d.ServiceId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_TourServices_ServiceTypes");
+
+            entity.HasOne(d => d.Tour).WithMany(p => p.TourServices)
+                .HasForeignKey(d => d.TourId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_TourServices_Tours");
         });
 
         modelBuilder.Entity<TourType>(entity =>
@@ -149,6 +267,15 @@ public partial class TourAgencyContext : DbContext
         modelBuilder.Entity<TourTypesToTour>(entity =>
         {
             entity.Property(e => e.Id).ValueGeneratedNever();
+
+            entity.HasOne(d => d.Tour).WithMany(p => p.TourTypesToTours)
+                .HasForeignKey(d => d.TourId)
+                .HasConstraintName("FK_TourTypesToTours_Tours");
+
+            entity.HasOne(d => d.Type).WithMany(p => p.TourTypesToTours)
+                .HasForeignKey(d => d.TypeId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_TourTypesToTours_TourTypes");
         });
 
         modelBuilder.Entity<Tourist>(entity =>
@@ -167,6 +294,10 @@ public partial class TourAgencyContext : DbContext
             entity.Property(e => e.Visa)
                 .IsRequired()
                 .HasMaxLength(50);
+
+            entity.HasOne(d => d.Client).WithMany(p => p.Tourists)
+                .HasForeignKey(d => d.ClientId)
+                .HasConstraintName("FK_Tourists_Clients");
         });
 
         OnModelCreatingPartial(modelBuilder);

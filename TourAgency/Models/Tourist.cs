@@ -18,4 +18,10 @@ public partial class Tourist
     public string Passport { get; set; }
 
     public string Visa { get; set; }
+
+    public int? ClientId { get; set; }
+
+    public virtual Client Client { get; set; }
+
+    public virtual ICollection<Insurance> Insurances { get; set; } = new List<Insurance>();
 }

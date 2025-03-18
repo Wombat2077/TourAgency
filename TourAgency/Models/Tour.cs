@@ -14,4 +14,20 @@ public partial class Tour
     public decimal Cost { get; set; }
 
     public int? NeededInsuranceId { get; set; }
+
+    public int? CityId { get; set; }
+
+    public DateTime? StartDate { get; set; }
+
+    public DateTime? EndDate { get; set; }
+
+    public virtual City City { get; set; }
+
+    public virtual ICollection<HotelsByTour> HotelsByTours { get; set; } = new List<HotelsByTour>();
+
+    public virtual InsuranceType NeededInsurance { get; set; }
+
+    public virtual ICollection<TourService> TourServices { get; set; } = new List<TourService>();
+
+    public virtual ICollection<TourTypesToTour> TourTypesToTours { get; set; } = new List<TourTypesToTour>();
 }
