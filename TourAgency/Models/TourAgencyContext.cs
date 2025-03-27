@@ -227,6 +227,7 @@ public partial class TourAgencyContext : DbContext
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.Cost).HasColumnType("money");
             entity.Property(e => e.EndDate).HasColumnType("datetime");
+            entity.Property(e => e.MaxPeopleCount).HasColumnName("maxPeopleCount");
             entity.Property(e => e.Name)
                 .IsRequired()
                 .HasMaxLength(50);
@@ -235,7 +236,7 @@ public partial class TourAgencyContext : DbContext
             entity.HasOne(d => d.City).WithMany(p => p.Tours)
                 .HasForeignKey(d => d.CityId)
                 .HasConstraintName("FK_Tours_Cities");
-
+            entity.HasMany(e => e.Types).WithMany(e => e.Tours);
             entity.HasOne(d => d.NeededInsurance).WithMany(p => p.Tours)
                 .HasForeignKey(d => d.NeededInsuranceId)
                 .HasConstraintName("FK_Tours_InsuranceTypes");

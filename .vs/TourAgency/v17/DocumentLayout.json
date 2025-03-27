@@ -1,28 +1,40 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\wombat1742\\source\\repos\\TourAgency\\",
+  "WorkspaceRootPath": "C:\\Users\\WSR\\TourAgency\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|c:\\users\\wombat1742\\source\\repos\\touragency\\touragency\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|c:\\users\\wsr\\touragency\\touragency\\controllers\\tourscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|solutionrelative:touragency\\controllers\\tourscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|c:\\users\\wsr\\touragency\\touragency\\models\\tour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|solutionrelative:touragency\\models\\tour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|c:\\users\\wsr\\touragency\\touragency\\controllers\\foodtypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|solutionrelative:touragency\\controllers\\foodtypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|c:\\users\\wsr\\touragency\\touragency\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|solutionrelative:touragency\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|c:\\users\\wsr\\touragency\\touragency\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|solutionrelative:touragency\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|c:\\users\\wombat1742\\source\\repos\\touragency\\touragency\\controllers\\tourtypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|solutionrelative:touragency\\controllers\\tourtypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|c:\\users\\wsr\\touragency\\touragency\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|solutionrelative:touragency\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|c:\\users\\wombat1742\\source\\repos\\touragency\\touragency\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|solutionrelative:touragency\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|c:\\users\\wsr\\touragency\\touragency\\controllers\\tourtypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|solutionrelative:touragency\\controllers\\tourtypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\wombat1742\\AppData\\Roaming\\Microsoft\\UserSecrets\\8b7e9096-247d-4e1f-a805-8adf74b06c37\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|c:\\users\\wombat1742\\source\\repos\\touragency\\touragency\\touragency.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|solutionrelative:touragency\\touragency.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|c:\\users\\wombat1742\\source\\repos\\touragency\\touragency\\models\\touragencycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|c:\\users\\wsr\\touragency\\touragency\\models\\touragencycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B8DA787-1B9D-418D-AA98-CD3EC98E8519}|TourAgency\\TourAgency.csproj|solutionrelative:touragency\\models\\touragencycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -33,7 +45,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,79 +61,113 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\wombat1742\\source\\repos\\TourAgency\\TourAgency\\Program.cs",
-              "RelativeDocumentMoniker": "TourAgency\\Program.cs",
-              "ToolTip": "C:\\Users\\wombat1742\\source\\repos\\TourAgency\\TourAgency\\Program.cs",
-              "RelativeToolTip": "TourAgency\\Program.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwB0AAAAeAAAA",
+              "DocumentIndex": 1,
+              "Title": "Tour.cs",
+              "DocumentMoniker": "C:\\Users\\WSR\\TourAgency\\TourAgency\\Models\\Tour.cs",
+              "RelativeDocumentMoniker": "TourAgency\\Models\\Tour.cs",
+              "ToolTip": "C:\\Users\\WSR\\TourAgency\\TourAgency\\Models\\Tour.cs",
+              "RelativeToolTip": "TourAgency\\Models\\Tour.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAwwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T10:29:13.233Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TourAgency.csproj",
-              "DocumentMoniker": "C:\\Users\\wombat1742\\source\\repos\\TourAgency\\TourAgency\\TourAgency.csproj",
-              "RelativeDocumentMoniker": "TourAgency\\TourAgency.csproj",
-              "ToolTip": "C:\\Users\\wombat1742\\source\\repos\\TourAgency\\TourAgency\\TourAgency.csproj",
-              "RelativeToolTip": "TourAgency\\TourAgency.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-14T10:57:43Z",
+              "WhenOpened": "2025-03-25T10:06:46.218Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\wombat1742\\source\\repos\\TourAgency\\TourAgency\\appsettings.json",
-              "RelativeDocumentMoniker": "TourAgency\\appsettings.json",
-              "ToolTip": "C:\\Users\\wombat1742\\source\\repos\\TourAgency\\TourAgency\\appsettings.json",
-              "RelativeToolTip": "TourAgency\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-14T11:04:22.187Z"
+              "Title": "FoodTypesController.cs",
+              "DocumentMoniker": "C:\\Users\\WSR\\TourAgency\\TourAgency\\Controllers\\FoodTypesController.cs",
+              "RelativeDocumentMoniker": "TourAgency\\Controllers\\FoodTypesController.cs",
+              "ToolTip": "C:\\Users\\WSR\\TourAgency\\TourAgency\\Controllers\\FoodTypesController.cs",
+              "RelativeToolTip": "TourAgency\\Controllers\\FoodTypesController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T09:43:26.096Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TourTypesController.cs",
-              "DocumentMoniker": "C:\\Users\\wombat1742\\source\\repos\\TourAgency\\TourAgency\\Controllers\\TourTypesController.cs",
-              "RelativeDocumentMoniker": "TourAgency\\Controllers\\TourTypesController.cs",
-              "ToolTip": "C:\\Users\\wombat1742\\source\\repos\\TourAgency\\TourAgency\\Controllers\\TourTypesController.cs",
-              "RelativeToolTip": "TourAgency\\Controllers\\TourTypesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAADAAAA",
+              "DocumentIndex": 0,
+              "Title": "ToursController.cs",
+              "DocumentMoniker": "C:\\Users\\WSR\\TourAgency\\TourAgency\\Controllers\\ToursController.cs",
+              "RelativeDocumentMoniker": "TourAgency\\Controllers\\ToursController.cs",
+              "ToolTip": "C:\\Users\\WSR\\TourAgency\\TourAgency\\Controllers\\ToursController.cs",
+              "RelativeToolTip": "TourAgency\\Controllers\\ToursController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAqwDMAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T10:59:15.698Z",
+              "WhenOpened": "2025-03-18T09:24:35.61Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "secrets.json",
-              "DocumentMoniker": "C:\\Users\\wombat1742\\AppData\\Roaming\\Microsoft\\UserSecrets\\8b7e9096-247d-4e1f-a805-8adf74b06c37\\secrets.json",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\8b7e9096-247d-4e1f-a805-8adf74b06c37\\secrets.json",
-              "ToolTip": "C:\\Users\\wombat1742\\AppData\\Roaming\\Microsoft\\UserSecrets\\8b7e9096-247d-4e1f-a805-8adf74b06c37\\secrets.json",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\8b7e9096-247d-4e1f-a805-8adf74b06c37\\secrets.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-14T10:55:44.649Z"
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\WSR\\TourAgency\\TourAgency\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "TourAgency\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\WSR\\TourAgency\\TourAgency\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "TourAgency\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T09:23:37.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\WSR\\TourAgency\\TourAgency\\Program.cs",
+              "RelativeDocumentMoniker": "TourAgency\\Program.cs",
+              "ToolTip": "C:\\Users\\WSR\\TourAgency\\TourAgency\\Program.cs",
+              "RelativeToolTip": "TourAgency\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T09:23:21.55Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\WSR\\TourAgency\\TourAgency\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "TourAgency\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\WSR\\TourAgency\\TourAgency\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "TourAgency\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T09:23:03.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "TourAgencyContext.cs",
-              "DocumentMoniker": "C:\\Users\\wombat1742\\source\\repos\\TourAgency\\TourAgency\\Models\\TourAgencyContext.cs",
+              "DocumentMoniker": "C:\\Users\\WSR\\TourAgency\\TourAgency\\Models\\TourAgencyContext.cs",
               "RelativeDocumentMoniker": "TourAgency\\Models\\TourAgencyContext.cs",
-              "ToolTip": "C:\\Users\\wombat1742\\source\\repos\\TourAgency\\TourAgency\\Models\\TourAgencyContext.cs",
+              "ToolTip": "C:\\Users\\WSR\\TourAgency\\TourAgency\\Models\\TourAgencyContext.cs",
               "RelativeToolTip": "TourAgency\\Models\\TourAgencyContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE0AAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T10:40:49.403Z"
+              "WhenOpened": "2025-03-18T09:21:31.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TourTypesController.cs",
+              "DocumentMoniker": "C:\\Users\\WSR\\TourAgency\\TourAgency\\Controllers\\TourTypesController.cs",
+              "RelativeDocumentMoniker": "TourAgency\\Controllers\\TourTypesController.cs",
+              "ToolTip": "C:\\Users\\WSR\\TourAgency\\TourAgency\\Controllers\\TourTypesController.cs",
+              "RelativeToolTip": "TourAgency\\Controllers\\TourTypesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T10:59:15.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\wombat1742\\AppData\\Roaming\\Microsoft\\UserSecrets\\8b7e9096-247d-4e1f-a805-8adf74b06c37\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\wombat1742\\AppData\\Roaming\\Microsoft\\UserSecrets\\8b7e9096-247d-4e1f-a805-8adf74b06c37\\secrets.json",
+              "ToolTip": "C:\\Users\\wombat1742\\AppData\\Roaming\\Microsoft\\UserSecrets\\8b7e9096-247d-4e1f-a805-8adf74b06c37\\secrets.json",
+              "RelativeToolTip": "..\\..\\wombat1742\\AppData\\Roaming\\Microsoft\\UserSecrets\\8b7e9096-247d-4e1f-a805-8adf74b06c37\\secrets.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-14T10:55:44.649Z"
             }
           ]
         }

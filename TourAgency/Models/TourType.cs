@@ -12,4 +12,5 @@ public partial class TourType
     public string Name { get; set; }
 
     public virtual ICollection<TourTypesToTour> TourTypesToTours { get; set; } = new List<TourTypesToTour>();
+    public virtual ICollection<Tour> Tours { get; set; } = new List<Tour>();
 }

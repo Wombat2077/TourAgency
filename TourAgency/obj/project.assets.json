@@ -1433,16 +1433,16 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.SqlServer/9.0.3": {
+      "Microsoft.EntityFrameworkCore.SqlServer/9.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.1.6",
-          "Microsoft.EntityFrameworkCore.Relational": "9.0.3",
-          "Microsoft.Extensions.Caching.Memory": "9.0.3",
-          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
-          "Microsoft.Extensions.Logging": "9.0.3",
-          "System.Formats.Asn1": "9.0.3",
-          "System.Text.Json": "9.0.3"
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.1",
+          "Microsoft.Extensions.Caching.Memory": "9.0.1",
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.1",
+          "Microsoft.Extensions.Logging": "9.0.1",
+          "System.Formats.Asn1": "9.0.1",
+          "System.Text.Json": "9.0.1"
         },
         "compile": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
@@ -2385,7 +2385,7 @@
           }
         }
       },
-      "System.Formats.Asn1/9.0.3": {
+      "System.Formats.Asn1/9.0.1": {
         "type": "package",
         "compile": {
           "lib/net8.0/System.Formats.Asn1.dll": {
@@ -5101,10 +5101,10 @@
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.SqlServer/9.0.3": {
-      "sha512": "poKK0h5fldiBkpk/L/xq9Scd4FpnnZPj0SAKArnykqSMVJErd9iKtmCG5CjCpSPHrSdEyk8Uc4WUIWJ55i4JFg==",
+    "Microsoft.EntityFrameworkCore.SqlServer/9.0.1": {
+      "sha512": "hoevd5ZHP7qYwHc+f96f7R2HOjssYKAx1vOWwe2aVXIJVYhGFXQ1ovZsN6AWQ7pylmhv9IzIXUz8Sp5U40UzJw==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.sqlserver/9.0.3",
+      "path": "microsoft.entityframeworkcore.sqlserver/9.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5112,7 +5112,7 @@
         "PACKAGE.md",
         "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
-        "microsoft.entityframeworkcore.sqlserver.9.0.3.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlserver.9.0.1.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
@@ -6898,10 +6898,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Formats.Asn1/9.0.3": {
-      "sha512": "UzVZ0mGzqvpe5fbG6RKA0pEOuLsELtc5OzSqmCS/lE5sqAyLKm2IiozCHbJRoA5+EO9Wq/bGFuroYQZsbAu/bA==",
+    "System.Formats.Asn1/9.0.1": {
+      "sha512": "efRn3TXUx2aWG4yOjD5jxTYlPy4Pz/8fiwYBtIpVb/+ySsNA9PFWFd3M3MdcRx1XjpYtj5QSXGm8XnGCeh7dSA==",
       "type": "package",
-      "path": "system.formats.asn1/9.0.3",
+      "path": "system.formats.asn1/9.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6921,7 +6921,7 @@
         "lib/net9.0/System.Formats.Asn1.xml",
         "lib/netstandard2.0/System.Formats.Asn1.dll",
         "lib/netstandard2.0/System.Formats.Asn1.xml",
-        "system.formats.asn1.9.0.3.nupkg.sha512",
+        "system.formats.asn1.9.0.1.nupkg.sha512",
         "system.formats.asn1.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -7845,39 +7845,43 @@
     "net8.0": [
       "Microsoft.EntityFrameworkCore >= 9.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.3",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.3",
+      "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.3",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.20.1",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.7"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\wombat1742\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\WSR\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages": {},
+    "D:\\VSsdk\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wombat1742\\source\\repos\\TourAgency\\TourAgency\\TourAgency.csproj",
+      "projectUniqueName": "C:\\Users\\WSR\\TourAgency\\TourAgency\\TourAgency.csproj",
       "projectName": "TourAgency",
-      "projectPath": "C:\\Users\\wombat1742\\source\\repos\\TourAgency\\TourAgency\\TourAgency.csproj",
-      "packagesPath": "C:\\Users\\wombat1742\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wombat1742\\source\\repos\\TourAgency\\TourAgency\\obj\\",
+      "projectPath": "C:\\Users\\WSR\\TourAgency\\TourAgency\\TourAgency.csproj",
+      "packagesPath": "C:\\Users\\WSR\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\WSR\\TourAgency\\TourAgency\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+        "D:\\VSsdk\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\wombat1742\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\WSR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7913,7 +7917,7 @@
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
-            "version": "[9.0.3, )"
+            "version": "[9.0.1, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -7949,7 +7953,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -21,6 +21,8 @@ public partial class Tour
 
     public DateTime? EndDate { get; set; }
 
+    public int? MaxPeopleCount { get; set; }
+
     public virtual City City { get; set; }
 
     public virtual ICollection<HotelsByTour> HotelsByTours { get; set; } = new List<HotelsByTour>();
@@ -30,4 +32,5 @@ public partial class Tour
     public virtual ICollection<TourService> TourServices { get; set; } = new List<TourService>();
 
     public virtual ICollection<TourTypesToTour> TourTypesToTours { get; set; } = new List<TourTypesToTour>();
+    public virtual ICollection<TourType> Types { get; set; } = new List<TourType>(); 
 }
