@@ -26,38 +26,46 @@ namespace TourAgency.Controllers
                 [FromBody] int peopleCount,
                 [FromBody] bool hasChildren,
                 [FromBody] List<int> preferredTypes,
-
+                [FromBody] int hotelStars,
+                [FromBody] List<int> Services,
+                [FromBody] int FoodTypeId,
+                [FromBody] decimal minCost,
+                [FromBody] decimal maxCost
 
             )
         {
             var data = _context.Tours.ToList();
             //Main information
             data = data
-                     .Where(item => item.StartDate <= DateTime.Parse(Request?.Query["startDate"] ?? ""))
-                     .Where(item => item.EndDate <= DateTime.Parse(Request?.Query["endDate"] ?? "" ))
+                     .Where(item => item.StartDate <= startDate)
+                     .Where(item => item.EndDate <= endDate)
                      .Where(item =>
                      {
-                         TimeSpan? span = item.EndDate - item.StartDate;
-                         if(span == null)
-                         {
-                             return true;
-                         }
-                         return span?.Days == dayCount;
+                         TimeSpan span = item.EndDate - item.StartDate;
+                         return span.Days <= dayCount;
                      })
                      .Where(item => item.MaxPeopleCount <= peopleCount)
-                     .OrderBy(item =>
-                     {
-                         var score = 0;
-                         for(int i = 0; i < preferredTypes.Count; i++)
-                         {
-                             if(item.TourTypesToTours.Where(type => type.TypeId == preferredTypes[i]).FirstOrDefault() != null){
-                                 score += preferredTypes.Count() - i;
-                             }
-                         }
-                         return score;
-                     })
-                     .Where(item => item.HotelsByTours.Where(hotel => hotel.))
-                     .ToList();
+                     
+                     .Where(item =>
+                                item.Hotels.Where(h => h.Rating >= hotelStars)
+                                           .Where(h => h.FoodTypes.Where(ft => ft.Id == FoodTypeId).Count() > 0)
+                                .Count() > 0
+                            )
+                     .Where(item => item.Services.Where(item => Services.Contains(item.Id)).Count() > 0)
+                     .Where(item => item.Cost >= minCost && item.Cost <= maxCost)
+					 .OrderBy(item =>
+					 {
+						 var score = 0;
+						 for (int i = 0; i < preferredTypes.Count; i++)
+						 {
+							 if (item.TourTypesToTours.Where(type => type.TypeId == preferredTypes[i]).FirstOrDefault() != null)
+							 {
+								 score += preferredTypes.Count() - i;
+							 }
+						 }
+						 return score;
+					 })
+					 .ToList();
             return Json(data);
         }
         

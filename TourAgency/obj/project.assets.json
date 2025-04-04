@@ -7852,36 +7852,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\WSR\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages": {},
-    "D:\\VSsdk\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\wombat1742\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\WSR\\TourAgency\\TourAgency\\TourAgency.csproj",
+      "projectUniqueName": "C:\\Users\\wombat1742\\source\\repos\\TourAgency\\TourAgency\\TourAgency.csproj",
       "projectName": "TourAgency",
-      "projectPath": "C:\\Users\\WSR\\TourAgency\\TourAgency\\TourAgency.csproj",
-      "packagesPath": "C:\\Users\\WSR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\WSR\\TourAgency\\TourAgency\\obj\\",
+      "projectPath": "C:\\Users\\wombat1742\\source\\repos\\TourAgency\\TourAgency\\TourAgency.csproj",
+      "packagesPath": "C:\\Users\\wombat1742\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\wombat1742\\source\\repos\\TourAgency\\TourAgency\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
-        "D:\\VSsdk\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\WSR\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+        "C:\\Users\\wombat1742\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7953,7 +7949,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

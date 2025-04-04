@@ -16,4 +16,5 @@ public partial class ServiceType
     public virtual ICollection<ActualService> ActualServices { get; set; } = new List<ActualService>();
 
     public virtual ICollection<TourService> TourServices { get; set; } = new List<TourService>();
+    public virtual ICollection<Tour> Tours { get ; set; }   = new List<Tour>();
 }

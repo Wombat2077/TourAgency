@@ -12,4 +12,5 @@ public partial class FoodType
     public string Name { get; set; }
 
     public virtual ICollection<HotelsFoodType> HotelsFoodTypes { get; set; } = new List<HotelsFoodType>();
+    public virtual ICollection<Hotel> Hotels { get; set; } = new List<Hotel>();
 }

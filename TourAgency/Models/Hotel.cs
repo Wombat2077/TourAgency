@@ -22,4 +22,6 @@ public partial class Hotel
     public virtual ICollection<HotelsByTour> HotelsByTours { get; set; } = new List<HotelsByTour>();
 
     public virtual ICollection<HotelsFoodType> HotelsFoodTypes { get; set; } = new List<HotelsFoodType>();
+    public virtual ICollection<Tour> Tours { get; set; } = new List<Tour>();
+    public virtual ICollection<FoodType> FoodTypes { get; set; } = new List<FoodType>();
 }

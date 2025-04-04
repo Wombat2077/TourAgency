@@ -149,6 +149,8 @@ public partial class TourAgencyContext : DbContext
             entity.Property(e => e.Name)
                 .IsRequired()
                 .HasMaxLength(50);
+            entity.HasMany(e => e.Tours).WithMany(e => e.Hotels);
+            entity.HasMany(e => e.FoodTypes).WithMany(e => e.Hotels);
         });
 
         modelBuilder.Entity<HotelsByTour>(entity =>
@@ -237,6 +239,8 @@ public partial class TourAgencyContext : DbContext
                 .HasForeignKey(d => d.CityId)
                 .HasConstraintName("FK_Tours_Cities");
             entity.HasMany(e => e.Types).WithMany(e => e.Tours);
+            entity.HasMany(e => e.Hotels).WithMany(e => e.Tours);
+            entity.HasMany(e => e.Services).WithMany(e => e.Tours);
             entity.HasOne(d => d.NeededInsurance).WithMany(p => p.Tours)
                 .HasForeignKey(d => d.NeededInsuranceId)
                 .HasConstraintName("FK_Tours_InsuranceTypes");

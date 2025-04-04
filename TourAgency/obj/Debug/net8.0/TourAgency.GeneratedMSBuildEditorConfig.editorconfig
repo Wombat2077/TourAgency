@@ -17,79 +17,79 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TourAgency
 build_property.RootNamespace = TourAgency
-build_property.ProjectDir = C:\Users\WSR\TourAgency\TourAgency\
+build_property.ProjectDir = C:\Users\wombat1742\source\repos\TourAgency\TourAgency\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\WSR\TourAgency\TourAgency
+build_property.MSBuildProjectDirectory = C:\Users\wombat1742\source\repos\TourAgency\TourAgency
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/WSR/TourAgency/TourAgency/Views/FoodTypes/Create.cshtml]
+[C:/Users/wombat1742/source/repos/TourAgency/TourAgency/Views/FoodTypes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFR5cGVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WSR/TourAgency/TourAgency/Views/FoodTypes/Delete.cshtml]
+[C:/Users/wombat1742/source/repos/TourAgency/TourAgency/Views/FoodTypes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFR5cGVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WSR/TourAgency/TourAgency/Views/FoodTypes/Details.cshtml]
+[C:/Users/wombat1742/source/repos/TourAgency/TourAgency/Views/FoodTypes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFR5cGVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WSR/TourAgency/TourAgency/Views/FoodTypes/Edit.cshtml]
+[C:/Users/wombat1742/source/repos/TourAgency/TourAgency/Views/FoodTypes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFR5cGVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WSR/TourAgency/TourAgency/Views/FoodTypes/Index.cshtml]
+[C:/Users/wombat1742/source/repos/TourAgency/TourAgency/Views/FoodTypes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFR5cGVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WSR/TourAgency/TourAgency/Views/Home/Index.cshtml]
+[C:/Users/wombat1742/source/repos/TourAgency/TourAgency/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WSR/TourAgency/TourAgency/Views/Home/Privacy.cshtml]
+[C:/Users/wombat1742/source/repos/TourAgency/TourAgency/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WSR/TourAgency/TourAgency/Views/Shared/Error.cshtml]
+[C:/Users/wombat1742/source/repos/TourAgency/TourAgency/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WSR/TourAgency/TourAgency/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/wombat1742/source/repos/TourAgency/TourAgency/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WSR/TourAgency/TourAgency/Views/Tours/Create.cshtml]
+[C:/Users/wombat1742/source/repos/TourAgency/TourAgency/Views/Tours/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WSR/TourAgency/TourAgency/Views/Tours/Delete.cshtml]
+[C:/Users/wombat1742/source/repos/TourAgency/TourAgency/Views/Tours/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WSR/TourAgency/TourAgency/Views/Tours/Details.cshtml]
+[C:/Users/wombat1742/source/repos/TourAgency/TourAgency/Views/Tours/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WSR/TourAgency/TourAgency/Views/Tours/Edit.cshtml]
+[C:/Users/wombat1742/source/repos/TourAgency/TourAgency/Views/Tours/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WSR/TourAgency/TourAgency/Views/Tours/Index.cshtml]
+[C:/Users/wombat1742/source/repos/TourAgency/TourAgency/Views/Tours/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WSR/TourAgency/TourAgency/Views/_ViewImports.cshtml]
+[C:/Users/wombat1742/source/repos/TourAgency/TourAgency/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WSR/TourAgency/TourAgency/Views/_ViewStart.cshtml]
+[C:/Users/wombat1742/source/repos/TourAgency/TourAgency/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/WSR/TourAgency/TourAgency/Views/Shared/_Layout.cshtml]
+[C:/Users/wombat1742/source/repos/TourAgency/TourAgency/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-sze9j5w3k9
